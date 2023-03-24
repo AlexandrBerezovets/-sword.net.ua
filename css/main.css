@@ -1,13 +1,25 @@
 .background {
     width: 100%;
-    background-image: url(../images/41-space-scrolling-background850-2.jpg);
+    background-color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+.header-owerlay {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+}
+
 .header {
+    position: absolute;
+    top: 0;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -16,14 +28,19 @@
     justify-content: space-between;
     padding-bottom: 10px;
     padding-top: 10px;
+    z-index: 3;
+    background-color: white;
 }
 
 .conteiner {
+    background-color: white;
     display: block;
     padding-top: 3px;
+    z-index: 2;
 }
 
 .menu-conteiner {
+    background-color: white;
 
 }
 
@@ -66,16 +83,38 @@ text-decoration: none;
 }
 
 .section.hero {
-    text-align: center;
-    background-color: var(--hero-bcgnd-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(https://images.samsung.com/is/image/samsung/assets/ru/explore/life-hacks/7-pravil-cifrovogo-etiketa/01-720-452_cifrovoi-etiket.png?$720_N_PNG$);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-    margin: 50px auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    display: block;
+    width: 100%;
+    height: 400px;
+}
 
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-box {
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.price-owerlay {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 4;
+    top: 650px;
+}
+
+.price-box {
+
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
