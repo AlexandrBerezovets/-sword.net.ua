@@ -1,0 +1,81 @@
+.background {
+    width: 100%;
+    background-image: url(../images/41-space-scrolling-background850-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.conteiner {
+    display: block;
+    padding-top: 3px;
+}
+
+.menu-conteiner {
+
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    display: flex;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navigation {
+    display: block;
+    flex-direction: column;
+}
+
+.button {
+margin-top: 10px;
+text-decoration: none;
+}
+
+.header-lk {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.header-list {
+    list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+.header-link {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.section.hero {
+    text-align: center;
+    background-color: var(--hero-bcgnd-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(https://images.samsung.com/is/image/samsung/assets/ru/explore/life-hacks/7-pravil-cifrovogo-etiketa/01-720-452_cifrovoi-etiket.png?$720_N_PNG$);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    margin: 50px auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+}
