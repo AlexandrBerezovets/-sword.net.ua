@@ -16,86 +16,189 @@
 
 <body class="background">
     <!--Header-->
-    <div class="header-owerlay conteiner">
-    <header class="header">
+    <div class="header-owerlay">
         <div class="conteiner">
+    <header class="header">
+        <div class="logo-conteiner">
             <picture class="header__logo">
                 <img src="./images/681bcc6681cb430bc2bb598ca83b259200dCnC89NnDD7TpY-1.png"
                     alt="Логотип компанії, два жовтих кільця і посередині текст sword.net.ua"
-                    width="300px" />
+                    width="160px" />
             </picture>
-            </div>
-            <div class="menu-conteiner">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/about-us" target="_parent" rel="noopener noreferrer nofollow">Провайдер</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/locality/lesniki" target="_parent"
-                            rel="noopener noreferrer nofollow">Інтернет</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/iptv/iptv/ott-opis-poslugi" target="_parent"
-                            rel="noopener noreferrer nofollow">IPTV</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/biznes" target="_parent"
-                            rel="noopener noreferrer nofollow">Для бізнесу</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/devices/network" target="_parent" rel="noopener noreferrer nofollow">Пристрої</a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="http://sword.net.ua/ua/contacts" target="_parent"
-                            rel="noopener noreferrer nofollow">Контакти</a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="navigation">
-                <button type="button">
-                    <a>Заявка на підключення</a>
-                </button>
-                <button type="button">
-                    <a href="https://admin.sword.net.ua/index.php">Особистий кабінет</a>
-                </button>
-                <div class="header-lk">
-            <ul class="header-list">
-                <li class="header-link">
-                    <a href="mailto:info@sword.net.ua">info@sword.net.ua</a>
+        </div>
+        <div class="menu-conteiner">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/about-us" 
+                    target="_parent" 
+                    rel="noopener noreferrer nofollow">Провайдер</a>
                 </li>
-                <li class="header-link">
-                    <a href="tel:+38 (044) 237-18-68">+38(044)237 18 68</a>
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/locality/lesniki" 
+                    target="_parent"
+                    rel="noopener noreferrer nofollow">Інтернет</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/iptv/iptv/ott-opis-poslugi"
+                    target="_parent"
+                    rel="noopener noreferrer nofollow">IPTV</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/biznes" 
+                    target="_parent"
+                    rel="noopener noreferrer nofollow">Для бізнесу</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/devices/network" 
+                    target="_parent" 
+                    rel="noopener noreferrer nofollow">Пристрої</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" 
+                    href="http://sword.net.ua/ua/contacts" 
+                    target="_parent"
+                    rel="noopener noreferrer nofollow">Контакти</a>
                 </li>
             </ul>
-            </div>
-            </nav>
+        </div>
+        <nav class="navigation">
+            <button type="button">
+                <a class="navbtn-text" href="http://sword.net.ua/ua/ordering">Заявка на підключення</a>
+            </button>
+            <button type="button">
+                <a class="navbtn-text" href="https://admin.sword.net.ua/index.php">Особистий кабінет</a>
+            </button>
+        </nav>
     </header>
     </div>
+    </div>
     <main>
+        <div class="conteiner">
         <section class="section hero">
-            <div class="hero-box">
-                <video class="hero-video" autoplay muted loop id="myVideo">
-                    <source src="../-sword.net.ua/video/banner-sword2.mp4" type="video/mp4">
-                </video>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../-sword.net.ua/images/banner1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../-sword.net.ua/images/banner2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../-sword.net.ua/images/banner3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
         <div class="price-owerlay">
-        <div class="price-box">
             <ul class="price-list">
-                <li class="price-item">JK Start</li>
-                <li class="price-item">JK Standart</li>
-                <li class="price-item">JK Turbo</li>
-                <li class="price-item">JK Giga</li>
-                <li class="price-item">Home Start</li>
-                <li class="price-item">Home Standart</li>
-                <li class="price-item">Home Turbo</li>
-                <li class="price-item">Home Giga</li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Start</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Standart</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Turbo</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Giga</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Start</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Standart</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Turbo</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Giga</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="price-owerlay">
+            <ul class="price-list">
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Start</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Standart</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Turbo</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">JK Giga</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Start</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Standart</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Turbo</p>
+                    </div>
+                </li>
+                <li class="price-item">
+                    <div class="price-box">
+                        <p class="price-text">Home Giga</p>
+                    </div>
+                </li>
             </ul>
         </div>
         </div>
     </main>
     <footer>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
