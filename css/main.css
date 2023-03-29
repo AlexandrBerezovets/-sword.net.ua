@@ -12,6 +12,7 @@
     right: 0;
     margin: auto;
     background-color: white;
+    z-index: 2;
 }
 
 .header {
@@ -28,7 +29,7 @@
 .menu-list {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 1px;
     padding: 0;
     margin: 0;
 }
@@ -93,6 +94,10 @@ text-decoration: none;
     margin: 0;
 }
 
+.price-owerlay {
+    padding-top: 40px;
+}
+
 .price-list {
     display: flex;
     padding: 0;
@@ -130,6 +135,7 @@ text-decoration: none;
     max-width: 1440px;
     position: relative;
     margin-top: 50px;
+    z-index: 1;
 }
 
 /* Hide the images by default */
@@ -146,11 +152,15 @@ text-decoration: none;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: gold !important;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 30px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
 }
 
 /* Position the "next button" to the right */
@@ -168,13 +178,17 @@ text-decoration: none;
 /* Caption text */
 .text {
     font-size: 24px;
+    font-weight: 700;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
     color: gold !important;
-    text-shadow: 2px 1px 1px #000;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
 }
 
 /* Number text (1/3 etc) */
@@ -192,7 +206,7 @@ text-decoration: none;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: gold;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -200,7 +214,7 @@ text-decoration: none;
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: grey;
 }
 
 /* Fading animation */
@@ -229,4 +243,58 @@ text-decoration: none;
     to {
         opacity: 1
     }
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    width: 140px;
+    height: 40px;
+}
+
+.dropbtn-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: gold;
 }
