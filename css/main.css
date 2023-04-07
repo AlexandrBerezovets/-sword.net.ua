@@ -458,3 +458,18 @@ p {
 .yt:hover {
     background: rgba(0, 0, 0, 0.2);
 }
+
+.info-box {
+    display: flex;
+    margin-top: 100px;
+}
+
+.info-image {
+    width: 800px;
+}
+
+.info-text {
+    width: 600px;
+    margin-left: 30px;
+
+}
