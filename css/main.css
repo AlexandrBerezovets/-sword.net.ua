@@ -320,6 +320,17 @@ text-decoration: none;
     outline: none;
 }
 
+.price-header {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.price-list {
+    margin-top: 50px;
+}
+
 .cont {
     width: 280px;
     height: 400px;
