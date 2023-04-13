@@ -163,7 +163,7 @@ a.glo:hover {
     margin-right: 30px;
     padding: 0;
     justify-content: space-between;
-    gap: 30px;
+    gap: 60px;
 }
 
 .price-item {
@@ -356,12 +356,35 @@ a.glo:hover {
 }
 
 .cont {
-    width: 280px;
+    width: 300px;
     height: 400px;
     margin: 30px auto;
 }
 
+.cont:hover {
+    cursor: pointer;
+}
+
 .cont:hover .product-properties {
+  animation: shake 0.7s;
+  animation-iteration-count: infinite;
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+}
+
+.cont:hover h2 {
   animation: shake 0.7s;
   animation-iteration-count: infinite;
 }
@@ -381,13 +404,12 @@ a.glo:hover {
 }
 
 .card {
-    border-radius: 25px;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px 25px 8px 8px;
     border: 1px solid rgba(33, 33, 33, 0.5);
 }
 
 .card:hover {
-    border: 1px solid rgba(33, 33, 33, 1);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-head {
@@ -401,13 +423,9 @@ a.glo:hover {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffd700', endColorstr='#acacab', GradientType=1);
     border-radius: 25px 25px 0 0;
 }
+
 p {
     font-size: 50px;
-}
-
-.card-logo {
-    width: 55px;
-    margin: 20px;
 }
 
 .product-img {
@@ -423,6 +441,12 @@ p {
     color: rgba(0, 0, 0, 0.6);
 }
 
+.product-detail-pon {
+    padding: 0 20px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
 .product-detail h2 {
     font-size: 24px;
     font-weight: 500;
@@ -430,6 +454,16 @@ p {
     padding-top: 85px;
     padding-bottom: 5px;
     text-transform: uppercase;
+}
+
+.product-detail-pon h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 85px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: black;
 }
 
 .text-box {
@@ -440,15 +474,15 @@ p {
 .bottom-text {
     position: absolute;
     display: inline-block;
-    color: #000;
+    color: black;
     font-size: 20px;
     font-weight: 900;
     margin-left: 20px;
     margin-top: -60px;
-    opacity: 0.7;
+    
 }
 
-.cont:hover .bottom-text {
+.cont:hover .box-rate {
   animation: shake 0.7s;
   animation-iteration-count: infinite;
 }
@@ -477,29 +511,19 @@ p {
     opacity: 0.7;
 }
 
-.cont:hover .back-text {
-  animation: shake 0.7s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+.back-text-pon {
+    display: inline-block;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 .card-body {
-    height: 210px;
+    height: 190px;
     background: #fff;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 8px 8px;
 }
 
 .product-title {
@@ -525,7 +549,7 @@ p {
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     top: -90px;
-    left: 70px;
+    left: 100px;
     margin-left: 5px;
 }
 
@@ -538,26 +562,25 @@ p {
 }
 
 .product-price {
-    width: 150px;
+    width: 140px;
     position: absolute;
     background: #ffd700;
     padding: 3px 10px;
     text-align: center;
     display: inline-block;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 900;
     color: black;
     border-radius: 7px;
-    margin-top: -35px;
-    margin-left: 140px;
-    box-shadow: -5px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
+    margin-left: 155px;
     border: 1px solid rgb(0, 0, 0);
 }
 
 .product-price b {
     font-size: 24px;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .yt {
@@ -584,15 +607,13 @@ p {
 .info-text {
     width: 600px;
     margin-left: 30px;
-
 }
 
 /*-------------------------------------*/
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-340px * 8))}
-    0% { transform: translateX(0); }
+	100% { transform: translateX(-2880px)}
 }
 
 .slider {
@@ -602,16 +623,6 @@ p {
 	overflow:hidden;
 	position: relative;
 	width: 100%;
-}
-	
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 560px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
 }
 	
 .slider::after {
@@ -626,9 +637,10 @@ p {
 }
 	
 .slide-track {
-	animation: scroll 35s linear infinite;
+	animation: scroll 7s linear infinite;
+    animation-timing-function: steps(2, end);
 	display: flex;
-	width: calc(340px * 11.79);
+	width: 1440px;
 }
-	
+
 
