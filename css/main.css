@@ -646,9 +646,9 @@ p {
 /*------------Footer------------*/
 
 .section-basement {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #808080;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 .footer-box {
@@ -666,7 +666,8 @@ p {
 
 /* Footer Address Box */
 .logo-secondary {
-    margin-bottom: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .logo-secondary__link {
@@ -680,7 +681,7 @@ p {
     margin-top: 0;
 }
 
-.logo-secondary__web {
+.logo-secondary {
     color: white;
 }
 
@@ -697,7 +698,7 @@ p {
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    color: white;
+    color: gray;
     text-decoration: none;
 }
 
@@ -712,7 +713,7 @@ p {
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    color: white;
+    color: gray;
     text-decoration: none;
     margin-top: 0;
     margin-bottom: 12px;
@@ -735,10 +736,10 @@ p {
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.03em;
-    color: white;
+    color: gray;
     text-decoration: none;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -753,7 +754,7 @@ p {
     margin-bottom: 60px;
     align-items: center;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 .social__title {
@@ -763,10 +764,10 @@ p {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: white;
+    color: gray;
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .social__list {
@@ -793,11 +794,11 @@ p {
 
 .social__link:hover,
 .social__link:focus {
-    background-color: gold;
+    background-color: gray;
 }
 
 .social__icon {
-    fill: white;
+    fill: gray;
 }
 
 /* Footer Sign Up Box */
@@ -805,7 +806,7 @@ p {
 .sign {
     display: block;
     justify-content: center;
-    margin: 0;
+    margin-top: 20px;
     width: 570px;
 }
 
@@ -817,7 +818,7 @@ p {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: white;
+    color: gray;
 }
 
 .sign__form {
@@ -834,7 +835,7 @@ p {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
-    color: white;
+    color: gray;
     margin-right: 12px;
     margin-bottom: 0px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -871,7 +872,7 @@ p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: white;
+    color: gray;
 }
 
 .sign__button:hover,
@@ -881,7 +882,7 @@ p {
 }
 
 .sign__icon {
-    fill: white;
+    fill: gray;
     margin-left: 10px;
 }
 
